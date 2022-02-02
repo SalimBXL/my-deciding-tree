@@ -1,0 +1,110 @@
+[
+    {
+        "id": "start",
+        "text": "What is the main target ?", 
+        "image": "",
+        "answers": [
+            { "text": "KIUBE", "image": "",  "nextQuestion": "1" },
+            { "text": "TRASIS", "image": "", "nextQuestion": 2 },
+            { "text": "CLIO", "image": "", "nextQuestion": 3 },
+            { "text": "QC", "image": "", "nextQuestion": 4 }
+        ]
+    },
+    { 
+        "id": "1",
+        "text": "Production is not sufficient", 
+        "image": "",
+        "answers": [
+            { "text": "Unable to restart the KIUBE", "image": "",  "nextQuestion": "1.1" },
+            { "text": "Restarting the Kiube", "image": "", "nextQuestion": "1.2" }
+        ]
+    },
+    { 
+        "id": "1.1",
+        "text": "ACTIONS",
+        "image": "",
+        "actions": [
+            { "text": "Divide the production in proportion to the demands (modify teh distribution files on the CLIO)" },
+            { "text": "Send email to Bordet, Erasme and UZ" },
+            { "text": "Send email to Beta+ and KUL to order the remaining doses" }
+        ]
+    },
+    {
+        "id": "1.2",
+        "text": "Possibility to restore the complete situation...", 
+        "image": "",
+        "answers": [
+            { "text": "under 30'", "image": "",  "nextQuestion": "1.2.1" },
+            { "text": "under 30' but not completely...", "image": "", "nextQuestion": "1.2.2" },
+            { "text": "between 30' and 90'", "image": "", "nextQuestion": "1.2.3" },
+            { "text": "between 30' and 90' but not completely...", "image": "", "nextQuestion": "1.2.4" },
+            { "text": "but over 90' ...", "image": "", "nextQuestion": "1.2.5" }
+        ]
+    },
+    { 
+        "id": "1.2.1",
+        "text": "ACTIONS : Restoring the complete situation under 30'",
+        "image": "",
+        "actions": [
+            { "text": "Restart the KIUBE" },
+            { "text": "Delay under 30' needs other actions" }
+        ]
+    },
+    { 
+        "id": "1.2.2",
+        "text": "ACTIONS : Restoring the complete situation under 30' but not completely",
+        "image": "",
+        "actions": [
+            { "text": "Restart the KIUBE" },
+            { "text": "Divide teh production in proportion to the demands (modify teh distribution file on the CLIO" },
+            { "text": "If possible send the complete doses for Bordet and Erasme" },
+            { "text": "Send a dose of at least 5GBq for UZ" },
+            { "text": "Plan a second production only for UZ" },
+            { "text": "GAIN : No second transport" },
+            { "text": "Send email to Bordet, Erasme and UZ" },
+            { "text": "Plan a second production" },
+            { "text": "Send email to ISI to ask for a second transport in the morning (check the possibilities) if it is not possible to provide Bordet and Erasme at the first one." },
+            { "text": "Send email to Bordet, Erasme and UZ" }
+        ]
+    },
+    { 
+        "id": "1.2.3",
+        "text": "ACTIONS : Restoring the complete situation between 30' and 90'",
+        "image": "",
+        "actions": [
+            { "text": "Restart the KIUBE" },
+            { "text": "Send email to ISI to postpone the transport" },
+            { "text": "Send email to Bordet, Erasme and UZ" }
+        ]
+    },
+    { 
+        "id": "1.2.4",
+        "text": "ACTIONS : Restoring the complete situation between 30' and 90' but not completely",
+        "image": "",
+        "actions": [
+            { "text": "Restart teh KIUBE" },
+            { "text": "Divide the production to teh demands (modify teh distribution file on the CLIO" },
+            { "text": "If possible send the complete doses to Bordet and Erasme" },
+            { "text": "Send a dose at least 5GBq for UZ" },
+            { "text": "Plan a second production only for UZ" },
+            { "text": "Plan a second production only for UZ" },
+            { "text": "Gain: No second transport" },
+            { "text": "Send email to Bordet, Erasme and UZ" },
+            { "text": "Send email to ISI to postpone the transport" },
+            { "text": "Pan a second production" },
+            { "text": "Send email to ISI to ask a second transport in the morning (check teh possibilities) if it is not possible to provide Bordet and Erasme completely in th first one" },
+            { "text": "Send email to Bordet, Erasme and UZ" }
+        ]
+    },
+    { 
+        "id": "1.2.5",
+        "text": "ACTIONS : Restoring the complete situation but over 90'",
+        "image": "",
+        "actions": [
+            { "text": "Restart the KIUBE" },
+            { "text": "Send email to ISI to postpone the transport" },
+            { "text": "Send email to Bordet, Erasme and UZ" },
+            { "text": "Send email to Beta+ and KUL to order the start-up doses" }
+        ]
+    }
+]
