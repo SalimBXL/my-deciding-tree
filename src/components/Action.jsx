@@ -2,7 +2,26 @@ import React from "react";
 import "./Action.css";
 
 const Action = ({action}) => {
-    const {id, text, image, actions} =  action;
+    const {id, text, image, actions, links} =  action;
+
+    const LinkList = () => {
+        return (links && links.length > 0) && (
+            <div className="Action-links">
+                {links.map((link, idx) => {
+                    const {label, url} = link;
+                    const key = `link-${idx}`;
+                    return (
+                        <a
+                            key={key}
+                            className="Action-links-item" 
+                            href={url}>
+                            {label}
+                        </a>
+                    );
+                })}
+            </div>
+        );
+    };
 
     return (
         <>
@@ -14,14 +33,22 @@ const Action = ({action}) => {
                 <ol className='Action-answers'>
 
                     {actions.map((act, idx) => {
-                    const {text} = act;
-                    return (
-                        <li className="Action-answers-item" key={`${id}-${idx}`}>
-                            {text}
-                        </li>
-                    );
+                        const key = `answer-${id}-${idx}`;
+                        const {text} = act;
+                        return (
+                            <li 
+                                className="Action-answers-item" 
+                                key={key}>
+                                {text}
+                            </li>
+                        );
                     })}
                 </ol>
+
+                
+
+                <LinkList />
+
             </div>
 
             <div className="Action-navigaton">
