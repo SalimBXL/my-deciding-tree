@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import AnswerButton from "./AnswerButton";
 import "./Question.css";
 
@@ -32,6 +33,16 @@ const Question = ({question, onClick}) => {
         </div>
       </div>
     );
+}
+
+Question.propTypes = {
+  question: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired
+}
+
+Question.defaultProps = {
+  question: null,
+  onClick: null
 }
 
 export default Question;

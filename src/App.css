@@ -17,3 +17,35 @@
   margin: 0;
   padding: 0;
 }
+
+.Treelist {
+  border: 1px solid grey;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.Treelist-title {
+  color: darkslategrey;
+}
+
+.Treelist-item {
+  padding: 1em;
+  margin: 1em;
+  width: 300px;
+  background-color: antiquewhite;
+  color: darkslategrey;
+  border: 1px solid darkslategrey;
+  border-radius: 15px;
+}
+
+.Treelist-item:hover {
+  color: antiquewhite;
+  background-color: darkslategrey;
+}

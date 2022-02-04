@@ -1,27 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
+import LinkList from "./LinkList";
+import ActionNavigation from "./ActionNavigation";
 import "./Action.css";
 
 const Action = ({action}) => {
     const {id, text, image, actions, links} =  action;
-
-    const LinkList = () => {
-        return (links && links.length > 0) && (
-            <div className="Action-links">
-                {links.map((link, idx) => {
-                    const {label, url} = link;
-                    const key = `link-${idx}`;
-                    return (
-                        <a
-                            key={key}
-                            className="Action-links-item" 
-                            href={url}>
-                            {label}
-                        </a>
-                    );
-                })}
-            </div>
-        );
-    };
 
     return (
         <>
@@ -45,18 +29,22 @@ const Action = ({action}) => {
                     })}
                 </ol>
 
-                
-
-                <LinkList />
+                <LinkList links={links} />
 
             </div>
 
-            <div className="Action-navigaton">
-                <button className="Action-navigation-item" onClick={() => {}}>Back to xx</button>
-                <button className="Action-navigation-item" onClick={() => {}}>Restart</button>
-            </div>
+            <ActionNavigation  />
+            
         </>
     );
+}
+
+Action.propTypes = {
+    action: PropTypes.object.isRequired
+}
+
+Action.defaultProps = {
+    action: null
 }
 
 export default Action;
