@@ -1,338 +1,343 @@
-[
-    {
-        "id": "start",
-        "text": "What is the main target ?", 
-        "image": "",
-        "answers": [
-            { "text": "KIUBE", "image": "",  "nextQuestion": "kiube" },
-            { "text": "TRASIS", "image": "", "nextQuestion": "trasis" },
-            { "text": "CLIO", "image": "", "nextQuestion": "clio" },
-            { "text": "QC", "image": "", "nextQuestion": "qc" }
-        ]
-    },
-    { 
-        "id": "kiube",
-        "text": "Production is not sufficient", 
-        "image": "",
-        "answers": [
-            { "text": "Unable to restart the KIUBE", "image": "",  "nextQuestion": "1.1" },
-            { "text": "Restarting the Kiube", "image": "", "nextQuestion": "1.2" }
-        ]
-    },
-    { 
-        "id": "1.1",
-        "text": "ACTIONS",
-        "image": "",
-        "actions": [
-            { "text": "Divide the production in proportion to the demands (modify the distribution files on the CLIO)" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Send email to Beta+ and KUL to order the remaining doses" }
-        ],
-        "links": [
-            { "label": "Lien de test1", "url": "#" },
-            { "label": "Lien de test2", "url": "#" }
-        ]
-    },
-    {
-        "id": "1.2",
-        "text": "Possibility to restore the complete situation...", 
-        "image": "",
-        "answers": [
-            { "text": "under 30'", "image": "",  "nextQuestion": "1.2.1" },
-            { "text": "under 30' but not completely...", "image": "", "nextQuestion": "1.2.2" },
-            { "text": "between 30' and 90'", "image": "", "nextQuestion": "1.2.3" },
-            { "text": "between 30' and 90' but not completely...", "image": "", "nextQuestion": "1.2.4" },
-            { "text": "but over 90' ...", "image": "", "nextQuestion": "1.2.5" }
-        ]
-    },
-    { 
-        "id": "1.2.1",
-        "text": "ACTIONS : Restoring the complete situation under 30'",
-        "image": "",
-        "actions": [
-            { "text": "Restart the KIUBE" },
-            { "text": "Delay under 30' needs other actions" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "1.2.2",
-        "text": "ACTIONS : Restoring the complete situation under 30' but not completely",
-        "image": "",
-        "actions": [
-            { "text": "Restart the KIUBE" },
-            { "text": "Divide teh production in proportion to the demands (modify the distribution file on the CLIO" },
-            { "text": "If possible send the complete doses for Bordet and Erasme" },
-            { "text": "Send a dose of at least 5GBq for UZ" },
-            { "text": "Plan a second production only for UZ" },
-            { "text": "GAIN : No second transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Plan a second production" },
-            { "text": "Send email to ISI to ask for a second transport in the morning (check the possibilities) if it is not possible to provide Bordet and Erasme at the first one." },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "1.2.3",
-        "text": "ACTIONS : Restoring the complete situation between 30' and 90'",
-        "image": "",
-        "actions": [
-            { "text": "Restart the KIUBE" },
-            { "text": "Send email to ISI to postpone the transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "1.2.4",
-        "text": "ACTIONS : Restoring the complete situation between 30' and 90' but not completely",
-        "image": "",
-        "actions": [
-            { "text": "Restart teh KIUBE" },
-            { "text": "Divide the production to teh demands (modify teh distribution file on the CLIO" },
-            { "text": "If possible send the complete doses to Bordet and Erasme" },
-            { "text": "Send a dose at least 5GBq for UZ" },
-            { "text": "Plan a second production only for UZ" },
-            { "text": "Plan a second production only for UZ" },
-            { "text": "Gain: No second transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Send email to ISI to postpone the transport" },
-            { "text": "Pan a second production" },
-            { "text": "Send email to ISI to ask a second transport in the morning (check teh possibilities) if it is not possible to provide Bordet and Erasme completely in th first one" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "1.2.5",
-        "text": "ACTIONS : Restoring the complete situation but over 90'",
-        "image": "",
-        "actions": [
-            { "text": "Restart the KIUBE" },
-            { "text": "Send email to ISI to postpone the transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Send email to Beta+ and KUL to order the start-up doses" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "trasis",
-        "text": "TRASIS", 
-        "image": "",
-        "answers": [
-            { "text": "Production is not sufficiant", "image": "",  "nextQuestion": "trasis-1" },
-            { "text": "Cancelled production", "image": "", "nextQuestion": "trasis-2" }
-        ]
-    },
-    { 
-        "id": "trasis-1",
-        "text": "Production is not sufficient", 
-        "image": "",
-        "answers": [
-            { "text": "Insufficient performance", "image": "",  "nextQuestion": "trasis-1.1" }
-        ]
-    },
-    { 
-        "id": "trasis-1.1",
-        "text": "ACTIONS : Insufficient performance",
-        "image": "",
-        "actions": [
-            { "text": "Divide the production in proportion to the demands (modify teh distribution file on the CLIO)" },
-            { "text": "If possible send the complete doses for Bordet and Erasme" },
-            { "text": "Send a dose of at least 5GBq for UZ" },
-            { "text": "Plan a second production only for UZ" },
-            { "text": "Gain : No second transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Plan a second production" },
-            { "text": "Send email to ISI to ask a second transport in the morning (check the possibilities) if it is not possible to provide Bordet and Erasme completely in the first transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "trasis-2",
-        "text": "Cancelled production", 
-        "image": "",
-        "answers": [
-            { "text": "Impossible to start a new production", "image": "",  "nextQuestion": "trasis-2.1" },
-            { "text": "Possibility to restart a new production", "image": "",  "nextQuestion": "trasis-2.2" }
-        ]
-    },
-    {
-        "id": "trasis-2.1",
-        "text": "ACTIONS : Impossible to start a new production",
-        "image": "",
-        "actions": [
-            { "text": "Send an email to ISI to cancel the production" },
-            { "text": "Send an email to Bordet, Erasme and UZ" },
-            { "text": "Send an email to Beta+ and KUL" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "trasis-2.2",
-        "text": "ACTIONS : Possibility to restart a new production",
-        "image": "",
-        "actions": [
-            { "text": "Send email to ISI to postpone the production" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Send email to Beta+ and KUL to order the start-up doses" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "clio",
-        "text": "CLIO", 
-        "image": "",
-        "answers": [
-            { "text": "Manipulation delay", "image": "",  "nextQuestion": "clio-1" },
-            { "text": "Production is not sufficiant", "image": "", "nextQuestion": "clio-2" }
-        ]
-    },
-    { 
-        "id": "clio-1",
-        "text": "Manipulation delay", 
-        "image": "",
-        "answers": [
-            { "text": "Under 30'", "image": "",  "nextQuestion": "clio-1.1" },
-            { "text": "Over 30'", "image": "",  "nextQuestion": "clio-1.2" }
-        ]
-    },
-    { 
-        "id": "clio-2",
-        "text": "Production is not sufficiant", 
-        "image": "",
-        "answers": [
-            { "text": "Leak / Transfer issue", "image": "",  "nextQuestion": "clio-2.1" }
-        ]
-    },
-    { 
-        "id": "clio-1.1",
-        "text": "ACTIONS : Manipulation delay under 30'",
-        "image": "",
-        "actions": [
-            { "text": "No action." }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "clio-1.2",
-        "text": "ACTIONS : Manipulation delay over 30'",
-        "image": "",
-        "actions": [
-            { "text": "Send email to ISI to postpone the transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "clio-2.1",
-        "text": "ACTIONS : Leak / Transfer issue",
-        "image": "",
-        "actions": [
-            { "text": "Divide the production in proportion to the demands (modify the distribution file on the CLIO)" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "If possible send the complete doses for Bordet and Erasme" },
-            { "text": "Send a dose of at least 5 GBq for UZ" },
-            { "text": "Plan a second production only for UZ" },
-            { "text": "Gain : No second transport" },
-            { "text": "Plan a second production" },
-            { "text": "Send email to ISI to ask a second transport in the morning (check teh possibilities) if it is not possible to provide Bordet and Erasme completely in the first transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "qc",
-        "text": "QC", 
-        "image": "",
-        "answers": [
-            { "text": "Manipulation delay", "image": "",  "nextQuestion": "qc-1" },
-            { "text": "Cancelled production", "image": "", "nextQuestion": "qc-2" }
-        ]
-    },
-    { 
-        "id": "qc-1",
-        "text": "Manipulation delay", 
-        "image": "",
-        "answers": [
-            { "text": "Under 30'", "image": "",  "nextQuestion": "qc-1.1" },
-            { "text": "Over 30'", "image": "",  "nextQuestion": "qc-1.2" }
-        ]
-    },
-    { 
-        "id": "qc-1.1",
-        "text": "ACTIONS : Manipulation delay under 30'",
-        "image": "",
-        "actions": [
-            { "text": "No action." }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "qc-1.2",
-        "text": "ACTIONS : Manipulation delay over 30'",
-        "image": "",
-        "actions": [
-            { "text": "Send email to ISI to postpone the transport" },
-            { "text": "Send email to Bordet, Erasme and UZ" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    },
-    { 
-        "id": "qc-2",
-        "text": "Cancelled production", 
-        "image": "",
-        "answers": [
-            { "text": "Possibility to restart a new production", "image": "",  "nextQuestion": "qc-2.1" }
-        ]
-    },
-    { 
-        "id": "qc-2.1",
-        "text": "Possibility to restart a new production", 
-        "image": "",
-        "answers": [
-            { "text": "Possibility to restore the complete situation under 90'", "image": "",  "nextQuestion": "qc-2.1.1" }
-        ]
-    },
-    { 
-        "id": "qc-2.1.1",
-        "text": "ACTIONS : Possibility to restore the complete situation under 90'",
-        "image": "",
-        "actions": [
-            { "text": "Send email to ISI to postpone the production" },
-            { "text": "Send email to Bordet, Erasme and UZ" },
-            { "text": "Send email to Beta+ and KUL to order the start-up doses" }
-        ],
-        "links": [
-            { "label": "", "url": "" }
-        ]
-    }
-]
+{
+    "name": "Resolve Production Problems",
+    "description": "",
+    "tree":
+    [
+        {
+            "id": "start",
+            "text": "What is the main target ?", 
+            "image": "",
+            "answers": [
+                { "text": "KIUBE", "image": "",  "nextQuestion": "kiube" },
+                { "text": "TRASIS", "image": "", "nextQuestion": "trasis" },
+                { "text": "CLIO", "image": "", "nextQuestion": "clio" },
+                { "text": "QC", "image": "", "nextQuestion": "qc" }
+            ]
+        },
+        { 
+            "id": "kiube",
+            "text": "Production is not sufficient", 
+            "image": "",
+            "answers": [
+                { "text": "Unable to restart the KIUBE", "image": "",  "nextQuestion": "1.1" },
+                { "text": "Restarting the Kiube", "image": "", "nextQuestion": "1.2" }
+            ]
+        },
+        { 
+            "id": "1.1",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+                { "text": "Divide the production in proportion to the demands (modify the distribution files on the CLIO)" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Send email to Beta+ and KUL to order the remaining doses" }
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+        },
+        {
+            "id": "1.2",
+            "text": "Possibility to restore the complete situation...", 
+            "image": "",
+            "answers": [
+                { "text": "under 30'", "image": "",  "nextQuestion": "1.2.1" },
+                { "text": "under 30' but not completely...", "image": "", "nextQuestion": "1.2.2" },
+                { "text": "between 30' and 90'", "image": "", "nextQuestion": "1.2.3" },
+                { "text": "between 30' and 90' but not completely...", "image": "", "nextQuestion": "1.2.4" },
+                { "text": "but over 90' ...", "image": "", "nextQuestion": "1.2.5" }
+            ]
+        },
+        { 
+            "id": "1.2.1",
+            "text": "ACTIONS : Restoring the complete situation under 30'",
+            "image": "",
+            "actions": [
+                { "text": "Restart the KIUBE" },
+                { "text": "Delay under 30' needs other actions" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "1.2.2",
+            "text": "ACTIONS : Restoring the complete situation under 30' but not completely",
+            "image": "",
+            "actions": [
+                { "text": "Restart the KIUBE" },
+                { "text": "Divide teh production in proportion to the demands (modify the distribution file on the CLIO" },
+                { "text": "If possible send the complete doses for Bordet and Erasme" },
+                { "text": "Send a dose of at least 5GBq for UZ" },
+                { "text": "Plan a second production only for UZ" },
+                { "text": "GAIN : No second transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Plan a second production" },
+                { "text": "Send email to ISI to ask for a second transport in the morning (check the possibilities) if it is not possible to provide Bordet and Erasme at the first one." },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "1.2.3",
+            "text": "ACTIONS : Restoring the complete situation between 30' and 90'",
+            "image": "",
+            "actions": [
+                { "text": "Restart the KIUBE" },
+                { "text": "Send email to ISI to postpone the transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "1.2.4",
+            "text": "ACTIONS : Restoring the complete situation between 30' and 90' but not completely",
+            "image": "",
+            "actions": [
+                { "text": "Restart teh KIUBE" },
+                { "text": "Divide the production to teh demands (modify teh distribution file on the CLIO" },
+                { "text": "If possible send the complete doses to Bordet and Erasme" },
+                { "text": "Send a dose at least 5GBq for UZ" },
+                { "text": "Plan a second production only for UZ" },
+                { "text": "Plan a second production only for UZ" },
+                { "text": "Gain: No second transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Send email to ISI to postpone the transport" },
+                { "text": "Pan a second production" },
+                { "text": "Send email to ISI to ask a second transport in the morning (check teh possibilities) if it is not possible to provide Bordet and Erasme completely in th first one" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "1.2.5",
+            "text": "ACTIONS : Restoring the complete situation but over 90'",
+            "image": "",
+            "actions": [
+                { "text": "Restart the KIUBE" },
+                { "text": "Send email to ISI to postpone the transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Send email to Beta+ and KUL to order the start-up doses" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "trasis",
+            "text": "TRASIS", 
+            "image": "",
+            "answers": [
+                { "text": "Production is not sufficiant", "image": "",  "nextQuestion": "trasis-1" },
+                { "text": "Cancelled production", "image": "", "nextQuestion": "trasis-2" }
+            ]
+        },
+        { 
+            "id": "trasis-1",
+            "text": "Production is not sufficient", 
+            "image": "",
+            "answers": [
+                { "text": "Insufficient performance", "image": "",  "nextQuestion": "trasis-1.1" }
+            ]
+        },
+        { 
+            "id": "trasis-1.1",
+            "text": "ACTIONS : Insufficient performance",
+            "image": "",
+            "actions": [
+                { "text": "Divide the production in proportion to the demands (modify teh distribution file on the CLIO)" },
+                { "text": "If possible send the complete doses for Bordet and Erasme" },
+                { "text": "Send a dose of at least 5GBq for UZ" },
+                { "text": "Plan a second production only for UZ" },
+                { "text": "Gain : No second transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Plan a second production" },
+                { "text": "Send email to ISI to ask a second transport in the morning (check the possibilities) if it is not possible to provide Bordet and Erasme completely in the first transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "trasis-2",
+            "text": "Cancelled production", 
+            "image": "",
+            "answers": [
+                { "text": "Impossible to start a new production", "image": "",  "nextQuestion": "trasis-2.1" },
+                { "text": "Possibility to restart a new production", "image": "",  "nextQuestion": "trasis-2.2" }
+            ]
+        },
+        {
+            "id": "trasis-2.1",
+            "text": "ACTIONS : Impossible to start a new production",
+            "image": "",
+            "actions": [
+                { "text": "Send an email to ISI to cancel the production" },
+                { "text": "Send an email to Bordet, Erasme and UZ" },
+                { "text": "Send an email to Beta+ and KUL" }
+            ],
+            "links": [
+                { "label": "", "url": "http://" }
+            ]
+        },
+        { 
+            "id": "trasis-2.2",
+            "text": "ACTIONS : Possibility to restart a new production",
+            "image": "",
+            "actions": [
+                { "text": "Send email to ISI to postpone the production" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Send email to Beta+ and KUL to order the start-up doses" }
+            ],
+            "links": [
+                { "label": "Action test", "url": "http://" }
+            ]
+        },
+        { 
+            "id": "clio",
+            "text": "CLIO", 
+            "image": "",
+            "answers": [
+                { "text": "Manipulation delay", "image": "",  "nextQuestion": "clio-1" },
+                { "text": "Production is not sufficiant", "image": "", "nextQuestion": "clio-2" }
+            ]
+        },
+        { 
+            "id": "clio-1",
+            "text": "Manipulation delay", 
+            "image": "",
+            "answers": [
+                { "text": "Under 30'", "image": "",  "nextQuestion": "clio-1.1" },
+                { "text": "Over 30'", "image": "",  "nextQuestion": "clio-1.2" }
+            ]
+        },
+        { 
+            "id": "clio-2",
+            "text": "Production is not sufficiant", 
+            "image": "",
+            "answers": [
+                { "text": "Leak / Transfer issue", "image": "",  "nextQuestion": "clio-2.1" }
+            ]
+        },
+        { 
+            "id": "clio-1.1",
+            "text": "ACTIONS : Manipulation delay under 30'",
+            "image": "",
+            "actions": [
+                { "text": "No action." }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "clio-1.2",
+            "text": "ACTIONS : Manipulation delay over 30'",
+            "image": "",
+            "actions": [
+                { "text": "Send email to ISI to postpone the transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "clio-2.1",
+            "text": "ACTIONS : Leak / Transfer issue",
+            "image": "",
+            "actions": [
+                { "text": "Divide the production in proportion to the demands (modify the distribution file on the CLIO)" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "If possible send the complete doses for Bordet and Erasme" },
+                { "text": "Send a dose of at least 5 GBq for UZ" },
+                { "text": "Plan a second production only for UZ" },
+                { "text": "Gain : No second transport" },
+                { "text": "Plan a second production" },
+                { "text": "Send email to ISI to ask a second transport in the morning (check teh possibilities) if it is not possible to provide Bordet and Erasme completely in the first transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "qc",
+            "text": "QC", 
+            "image": "",
+            "answers": [
+                { "text": "Manipulation delay", "image": "",  "nextQuestion": "qc-1" },
+                { "text": "Cancelled production", "image": "", "nextQuestion": "qc-2" }
+            ]
+        },
+        { 
+            "id": "qc-1",
+            "text": "Manipulation delay", 
+            "image": "",
+            "answers": [
+                { "text": "Under 30'", "image": "",  "nextQuestion": "qc-1.1" },
+                { "text": "Over 30'", "image": "",  "nextQuestion": "qc-1.2" }
+            ]
+        },
+        { 
+            "id": "qc-1.1",
+            "text": "ACTIONS : Manipulation delay under 30'",
+            "image": "",
+            "actions": [
+                { "text": "No action." }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "qc-1.2",
+            "text": "ACTIONS : Manipulation delay over 30'",
+            "image": "",
+            "actions": [
+                { "text": "Send email to ISI to postpone the transport" },
+                { "text": "Send email to Bordet, Erasme and UZ" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        },
+        { 
+            "id": "qc-2",
+            "text": "Cancelled production", 
+            "image": "",
+            "answers": [
+                { "text": "Possibility to restart a new production", "image": "",  "nextQuestion": "qc-2.1" }
+            ]
+        },
+        { 
+            "id": "qc-2.1",
+            "text": "Possibility to restart a new production", 
+            "image": "",
+            "answers": [
+                { "text": "Possibility to restore the complete situation under 90'", "image": "",  "nextQuestion": "qc-2.1.1" }
+            ]
+        },
+        { 
+            "id": "qc-2.1.1",
+            "text": "ACTIONS : Possibility to restore the complete situation under 90'",
+            "image": "",
+            "actions": [
+                { "text": "Send email to ISI to postpone the production" },
+                { "text": "Send email to Bordet, Erasme and UZ" },
+                { "text": "Send email to Beta+ and KUL to order the start-up doses" }
+            ],
+            "links": [
+                { "label": "", "url": "" }
+            ]
+        }
+    ]
+}

@@ -28,30 +28,27 @@ function App() {
   
   const updateCurrentTree = (indice) => {
     const tree = getOneTreeFromTheTreeList(indice);
-    const data=()=>{
-      fetch(`data/${tree}`,
-      {
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }
-      })
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        setArbre(data);
-        console.log(myJson);
-      });
+    const treeName = tree && tree.tree ? `data/${tree.tree}` : null;    
+    if (treeName) {
+      fetch(treeName)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data) {
+            setCurrentTree(prev => {
+              const tree = data.tree;
+              setArbre(prev => {
+                setCurrentNode(prev => {
+                  const node = tree.find(node => node.id === "start");
+                  return node;
+                });
+                return tree;
+              });
+              return data;
+            });
+          }
+        }
+      )
     }
-
-    console.log("***********************************");
-    console.log(tree);
-    console.log(data.data);
-    console.log("***********************************");
-
-    updateCurrentNode("start");
   }
 
   const handleQuestionClick = (indice) => {

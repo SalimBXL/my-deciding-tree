@@ -6,9 +6,11 @@ const LinkList = ({links}) => {
     return (links && links.length > 0) && (
         <div className="Action-links">
             {links.map((link, idx) => {
-                const {label, url} = link;
+                let {label, url} = link;
+                if (label.length < 1) label = "[ACTION]";
                 const key = `link-${idx}`;
                 return (
+                    url.length > 0 &&
                     <a
                         key={key}
                         className="Action-links-item" 
@@ -22,11 +24,14 @@ const LinkList = ({links}) => {
 };
 
 LinkList.propTypes = {
-    links: PropTypes.object.isRequired
+    links: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string,
+        url: PropTypes.string
+    })).isRequired
 }
 
 LinkList.defaultProps = {
-    links: null
+    links: []
 }
 
 export default LinkList;

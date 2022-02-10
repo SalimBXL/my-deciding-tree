@@ -30,7 +30,7 @@ const Action = ({action}) => {
                 </ol>
 
                 <LinkList links={links} />
-
+                
             </div>
 
             <ActionNavigation  />

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./ActionNavigation.css";
+import uuid from "react-uuid";
 
 const ActionNavigation = ({links}) => {
     return (
@@ -9,6 +10,7 @@ const ActionNavigation = ({links}) => {
                 const {label, url} = link;
                 return (
                     <a 
+                        key={uuid()}
                         className="Action-navigation-item"
                         href={url}>
                         {label}
