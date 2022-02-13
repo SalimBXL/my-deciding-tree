@@ -15,6 +15,12 @@ const Question = ({question, onClick}) => {
       <div className='Question'>
         
         <p className='Question-title'>Node #{id}</p>
+
+        {(image && image.length > 0) && <img 
+          src={image} 
+          alt={image} 
+          className="Question-answers-image"
+        />}
         
         <h3 className='Question-text'>{text}</h3>
         
@@ -25,6 +31,7 @@ const Question = ({question, onClick}) => {
                 <AnswerButton
                     key={`${id}-${idx}`}
                     value={text}
+                    image={image}
                     nextQuestion={nextQuestion}
                     onClick={handleClick}
                 />

@@ -23,6 +23,10 @@
     margin: 0;
 }
 
+.Question-answers-image {
+    width: 320px;
+}
+
 .Question-title {
     color: grey;
     font-size: 0.7em;
@@ -51,4 +55,8 @@
 .Question-answers-item:hover {
     background-color: darkslategrey;
     color: whitesmoke;
+}
+
+.Question-answers-item-image {
+    width: 80px;
 }

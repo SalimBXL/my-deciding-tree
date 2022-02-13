@@ -11,6 +11,8 @@ const Action = ({action}) => {
         <>
             <div className="Action">
                 <p className='Action-title'>Node #{id}</p>
+
+                {(image && image.length > 0) && <img src={image} alt={image} />}
             
                 <h3 className='Action-text'>{text}</h3>
             
