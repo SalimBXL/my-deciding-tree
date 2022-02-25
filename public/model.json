@@ -1,0 +1,71 @@
+{
+    "name": "",
+    "description": "",
+    "tree": [
+        {
+            "id": "one reference",
+            "text": "This is a question", 
+            "image": "this is a link to an image",
+            "answers": [
+                { "text": "this is an answer to the question", "image": "this is a link to an image to illustrate the answer",  "nextQuestion": "this is the node reference to the next question or the action." },
+                { "text": "", "image": "", "nextQuestion": "" },
+                { "text": "", "image": "", "nextQuestion": "" },
+                { "text": "", "image": "", "nextQuestion": "" }
+            ]
+        },
+        { 
+            "id": "another reference",
+            "text": "this is a text for an action",
+            "image": "this is a link to an image",
+            "actions": [
+                { "text": "this is an action" },
+                { "text": "" },
+                { "text": "" }
+            ],
+            "links": [
+                { "label": "this is a text to an outside link", "url": "link to an outside ressource" },
+                { "label": "", "url": "" }
+            ]
+        }
+    ]
+}
+
+
+
+INFORMATIONS ABOUT THE TREE :
+
+    name        : Name of the tree.
+    description : A short description of the tree's purpose.
+
+
+THE TREE :
+
+    tree        : The tree is a list of nodes. Each node is inside curly braces. Questions and actions are all together. A question is a branche and an action is a leaf.
+
+
+BRANCH :
+
+    id          : A uniq reference to the branch.
+    text        : The question text.
+    image       : A link to an image wich illustrates the question. You can leave this field empty.
+    answers     : This is a list of nodes. Each node is inside curly braces and respresents a possible answer.
+
+    ANSWERS :
+        text            : The text of the possible answer.
+        image           : A link to an image wich illustrates the answer.
+        nextQuestion    : The reference to another question (branch) or an answer (leaf).
+
+
+LEAF :
+
+    id          : A uniq reference to the leaf.
+    text        : The text of the answer.
+    image       : A link to an image wich illustrates the answer.
+    actions     : A list of nodes. Each node is inside curly braces and represents an answer detail.
+
+    ACTIONS : 
+        text            : The text of an answer details.
+
+    LINKS : 
+        label           : Outside resource name.
+        url             : Link to an outside resource.

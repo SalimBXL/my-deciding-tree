@@ -1,5 +1,6 @@
 {
   "name": "my-deciding-tree",
+  "homepage": "http://135.125.201.138/demo/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
