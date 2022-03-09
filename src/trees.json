@@ -8,5 +8,10 @@
         "id": 1,
         "name": "Resolve Production Problems",
         "tree": "production.json"
+    },
+    {
+        "id": 2,
+        "name": "Global Tree Example",
+        "tree": "global_tree_example.json"
     }
 ]

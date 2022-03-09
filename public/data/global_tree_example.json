@@ -1,0 +1,246 @@
+{
+    "name": "Global Tree Design - Example",
+    "description": "",
+    "tree":
+    [
+{
+"id": "Q1",
+            "text": "Question number 1", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the question 2", 
+"image": "",  
+"nextQuestion": "Q2" 
+},
+{ 
+"text": "To the question 3", 
+"image": "",  
+"nextQuestion": "Q3" 
+},
+{ 
+"text": "To the question 4", 
+"image": "",  
+"nextQuestion": "Q4" 
+}
+
+            ]
+},
+	{
+            "id": "Q2",
+            "text": "Question number 2", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the question 5", 
+"image": "",  
+"nextQuestion": "Q5" 
+},
+{ 
+"text": "To the question 6", 
+"image": "",  
+"nextQuestion": "Q6" 
+}
+            ]
+},
+{
+            "id": "Q3",
+            "text": "Question number 3", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the action A4", 
+"image": "",  
+"nextQuestion": "A4" 
+}
+            ]
+},
+{
+            "id": "Q4",
+            "text": "Question number 4", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the question 7", 
+"image": "",  
+"nextQuestion": "Q7" 
+},
+{ 
+"text": "To the question 8", 
+"image": "",  
+"nextQuestion": "Q8" 
+}
+            ]
+},
+{
+            "id": "Q5",
+            "text": "Question number 5", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the action A1", 
+"image": "",  
+"nextQuestion": "A1" 
+},
+{ 
+"text": "To the action A2", 
+"image": "",  
+"nextQuestion": "A2" 
+}
+            ]
+},
+{
+            "id": "Q6",
+            "text": "Question number 6", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the action 3", 
+"image": "",  
+"nextQuestion": "A3" 
+},
+{ 
+"text": "To the action 4", 
+"image": "",  
+"nextQuestion": "A4" 
+}
+            ]
+},
+{
+            "id": "Q7",
+            "text": "Question number 7", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the action 5", 
+"image": "",  
+"nextQuestion": "A5" 
+},
+{ 
+"text": "To the action 6", 
+"image": "",  
+"nextQuestion": "A6" 
+}
+            ]
+},
+{
+            "id": "Q8",
+            "text": "Question number 8", 
+            "image": "",
+            "answers": [
+{ 
+"text": "To the question 6", 
+"image": "",  
+"nextQuestion": "A6" 
+},
+{ 
+"text": "To the question 7", 
+"image": "",  
+"nextQuestion": "A7" 
+}
+            ]
+},
+{
+"id": "A1",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "this is an action",
+"text": "this is an action"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+},
+{
+"id": "A2",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": []
+},   
+{
+"id": "A3",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+},
+{
+"id": "A4",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+},
+{
+"id": "A5",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+},
+{
+"id": "A6",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+},
+{
+"id": "A7",
+            "text": "ACTIONS",
+            "image": "",
+            "actions": [
+{
+"text": "action…",
+"text": "action…"
+}
+            ],
+            "links": [
+                { "label": "Lien de test1", "url": "#" },
+                { "label": "Lien de test2", "url": "#" }
+            ]
+}
+    ]
+}
